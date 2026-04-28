@@ -1,0 +1,142 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFF8EA"/>
+      <stop offset="100%" stop-color="#FFEAC4"/>
+    </linearGradient>
+    <radialGradient id="hl" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"  stop-color="#FFF1B5"/>
+      <stop offset="60%" stop-color="#FFC83D"/>
+      <stop offset="100%" stop-color="#F5B400"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Sun -->
+  <circle cx="1080" cy="120" r="74" fill="#FFC83D"/>
+  <circle cx="1080" cy="120" r="74" fill="none" stroke="#0F1F3D" stroke-width="4"/>
+
+  <!-- Distant hills -->
+  <path d="M0 470 Q 200 410 380 450 T 760 440 T 1200 460 L 1200 630 L 0 630 Z"
+        fill="#FFEAC4" stroke="#0F1F3D" stroke-width="3"/>
+
+  <!-- Dotted route line across horizon -->
+  <g fill="#0F1F3D" opacity="0.55">
+    <circle cx="60"   cy="540" r="5"/>
+    <circle cx="100"  cy="540" r="5"/>
+    <circle cx="140"  cy="540" r="5"/>
+    <circle cx="180"  cy="540" r="5"/>
+    <circle cx="220"  cy="540" r="5"/>
+    <circle cx="260"  cy="540" r="5"/>
+    <circle cx="300"  cy="540" r="5"/>
+    <circle cx="340"  cy="540" r="5"/>
+    <circle cx="380"  cy="540" r="5"/>
+    <circle cx="420"  cy="540" r="5"/>
+    <circle cx="460"  cy="540" r="5"/>
+    <circle cx="500"  cy="540" r="5"/>
+    <circle cx="540"  cy="540" r="5"/>
+    <circle cx="580"  cy="540" r="5"/>
+    <circle cx="620"  cy="540" r="5"/>
+    <circle cx="900"  cy="540" r="5"/>
+    <circle cx="940"  cy="540" r="5"/>
+    <circle cx="980"  cy="540" r="5"/>
+    <circle cx="1020" cy="540" r="5"/>
+    <circle cx="1060" cy="540" r="5"/>
+    <circle cx="1100" cy="540" r="5"/>
+    <circle cx="1140" cy="540" r="5"/>
+  </g>
+
+  <!-- Bus (mid-page, slight overlap with text) -->
+  <g transform="translate(680, 360)">
+    <!-- shadow -->
+    <ellipse cx="170" cy="186" rx="172" ry="14" fill="#0F1F3D" opacity="0.2"/>
+    <!-- body -->
+    <path d="M28 30 Q28 0 60 0 L280 0 Q312 0 312 30 L312 178 L28 178 Z" fill="#0F1F3D"/>
+    <!-- yellow band -->
+    <rect x="28" y="62" width="284" height="42" fill="#FFC83D"/>
+    <rect x="28" y="58" width="284" height="6" fill="#0A1730"/>
+    <rect x="28" y="102" width="284" height="6" fill="#0A1730"/>
+    <!-- windscreen -->
+    <path d="M58 24 Q58 14 70 14 L270 14 Q282 14 282 24 L282 56 L58 56 Z" fill="#FFF8EA"/>
+    <rect x="168" y="14" width="4" height="42" fill="#0F1F3D"/>
+    <path d="M70 18 L120 18 L106 52 L60 52 Z" fill="#FFC83D" opacity="0.35"/>
+    <!-- headlights -->
+    <circle cx="74"  cy="138" r="20" fill="url(#hl)" stroke="#0F1F3D" stroke-width="5"/>
+    <circle cx="266" cy="138" r="20" fill="url(#hl)" stroke="#0F1F3D" stroke-width="5"/>
+    <!-- bumper -->
+    <rect x="20" y="156" width="300" height="22" rx="6" fill="#FFC83D"/>
+    <rect x="20" y="156" width="300" height="22" rx="6" fill="none" stroke="#0F1F3D" stroke-width="4"/>
+    <!-- subtle smile -->
+    <path d="M120 134 Q170 152 220 134" stroke="#FFC83D" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- plate -->
+    <rect x="138" y="112" width="64" height="22" rx="4" fill="#FFF8EA" stroke="#0F1F3D" stroke-width="2.5"/>
+    <text x="170" y="128" text-anchor="middle"
+          font-family="JetBrains Mono, ui-monospace, monospace"
+          font-weight="700" font-size="13" fill="#0F1F3D" letter-spacing="1.2">SAFIRI</text>
+    <!-- mirrors -->
+    <rect x="14"  y="44" width="14" height="22" rx="3" fill="#0F1F3D"/>
+    <rect x="312" y="44" width="14" height="22" rx="3" fill="#0F1F3D"/>
+    <!-- wheels -->
+    <circle cx="84"  cy="178" r="22" fill="#0F1F3D"/>
+    <circle cx="84"  cy="178" r="9"  fill="#FFC83D"/>
+    <circle cx="256" cy="178" r="22" fill="#0F1F3D"/>
+    <circle cx="256" cy="178" r="9"  fill="#FFC83D"/>
+  </g>
+
+  <!-- Wordmark + tagline -->
+  <g transform="translate(80, 180)">
+    <!-- pill / kicker -->
+    <g>
+      <rect x="0" y="0" width="282" height="40" rx="20" fill="#FFF8EA" stroke="#0F1F3D" stroke-width="2"/>
+      <circle cx="22" cy="20" r="6" fill="#FF7A59"/>
+      <text x="40" y="26" font-family="JetBrains Mono, ui-monospace, monospace"
+            font-size="14" font-weight="600" fill="#0F1F3D" letter-spacing="1.5">
+        LIVE · SCHOOL TRANSPORT · KE
+      </text>
+    </g>
+
+    <!-- Wordmark -->
+    <text x="0" y="138"
+          font-family="Fraunces, ui-serif, Georgia, serif"
+          font-size="148" font-weight="800"
+          fill="#0F1F3D" letter-spacing="-3">
+      Safirikids
+    </text>
+
+    <!-- Tagline -->
+    <text x="4" y="206"
+          font-family="Fraunces, ui-serif, Georgia, serif"
+          font-style="italic" font-size="40" font-weight="500"
+          fill="#0F1F3D">
+      Every ride home,
+    </text>
+    <text x="4" y="252"
+          font-family="Fraunces, ui-serif, Georgia, serif"
+          font-style="italic" font-size="40" font-weight="500"
+          fill="#0F1F3D">
+      accounted for.
+    </text>
+
+    <!-- Body line -->
+    <text x="4" y="306"
+          font-family="Manrope, ui-sans-serif, system-ui, sans-serif"
+          font-size="22" font-weight="500" fill="#1A1A24">
+      Live bus tracking. Verified pick-ups.
+    </text>
+    <text x="4" y="334"
+          font-family="Manrope, ui-sans-serif, system-ui, sans-serif"
+          font-size="22" font-weight="500" fill="#1A1A24">
+      One calm channel from school to home.
+    </text>
+  </g>
+
+  <!-- bottom-left URL stamp -->
+  <g transform="translate(80, 560)">
+    <text x="0" y="0" font-family="JetBrains Mono, ui-monospace, monospace"
+          font-size="18" font-weight="600" fill="#0F1F3D" letter-spacing="1.2">
+      safirikids.cseco.co.ke
+    </text>
+  </g>
+</svg>

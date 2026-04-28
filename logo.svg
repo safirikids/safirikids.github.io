@@ -1,0 +1,104 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Safirikids mark. A friendly school bus seen from the front,
+    set inside a soft cream tile with rounded corners.
+    Navy body, sun-yellow band, two warm headlights, a subtle smile.
+  -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFF8EA"/>
+      <stop offset="100%" stop-color="#FFEAC4"/>
+    </linearGradient>
+    <radialGradient id="head" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#FFF1B5"/>
+      <stop offset="60%"  stop-color="#FFC83D"/>
+      <stop offset="100%" stop-color="#F5B400"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background tile -->
+  <rect x="16" y="16" width="480" height="480" rx="92" fill="url(#sky)"/>
+  <rect x="16" y="16" width="480" height="480" rx="92" fill="none"
+        stroke="#0F1F3D" stroke-width="10"/>
+
+  <!-- Soft sun arc, top-right -->
+  <circle cx="412" cy="112" r="52" fill="#FFC83D" opacity="0.85"/>
+
+  <!-- Dotted route line behind bus -->
+  <g opacity="0.55">
+    <circle cx="84"  cy="392" r="5" fill="#0F1F3D"/>
+    <circle cx="120" cy="392" r="5" fill="#0F1F3D"/>
+    <circle cx="156" cy="392" r="5" fill="#0F1F3D"/>
+    <circle cx="356" cy="392" r="5" fill="#0F1F3D"/>
+    <circle cx="392" cy="392" r="5" fill="#0F1F3D"/>
+    <circle cx="428" cy="392" r="5" fill="#0F1F3D"/>
+  </g>
+
+  <!-- Bus shadow -->
+  <ellipse cx="256" cy="408" rx="148" ry="14" fill="#0F1F3D" opacity="0.18"/>
+
+  <!-- Bus body (front view) -->
+  <g>
+    <!-- Roof curve -->
+    <path d="M132 188
+             Q132 156 168 156
+             L344 156
+             Q380 156 380 188
+             L380 388
+             L132 388
+             Z"
+          fill="#0F1F3D"/>
+
+    <!-- Yellow nose band -->
+    <rect x="132" y="220" width="248" height="48" fill="#FFC83D"/>
+
+    <!-- Top rail (windows divider) -->
+    <rect x="132" y="216" width="248" height="6" fill="#0A1730"/>
+    <rect x="132" y="266" width="248" height="6" fill="#0A1730"/>
+
+    <!-- Windscreen -->
+    <path d="M158 184
+             Q158 174 170 174
+             L342 174
+             Q354 174 354 184
+             L354 212
+             L158 212
+             Z"
+          fill="#FFF8EA"/>
+    <!-- Window split -->
+    <rect x="254" y="174" width="4" height="38" fill="#0F1F3D"/>
+    <!-- Window reflection -->
+    <path d="M170 178 L210 178 L196 208 L156 208 Z"
+          fill="#FFC83D" opacity="0.35"/>
+
+    <!-- Headlights -->
+    <circle cx="172" cy="304" r="20" fill="url(#head)" stroke="#0F1F3D" stroke-width="5"/>
+    <circle cx="340" cy="304" r="20" fill="url(#head)" stroke="#0F1F3D" stroke-width="5"/>
+
+    <!-- Mirrors -->
+    <rect x="120" y="200" width="14" height="22" rx="3" fill="#0F1F3D"/>
+    <rect x="378" y="200" width="14" height="22" rx="3" fill="#0F1F3D"/>
+
+    <!-- Bumper -->
+    <rect x="124" y="362" width="264" height="22" rx="6" fill="#FFC83D"/>
+    <rect x="124" y="362" width="264" height="22" rx="6" fill="none"
+          stroke="#0F1F3D" stroke-width="4"/>
+
+    <!-- Smile (subtle, integrated with grille) -->
+    <path d="M210 342 Q256 358 302 342"
+          stroke="#FFC83D" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- "SCHOOL" plate -->
+    <rect x="226" y="278" width="60" height="22" rx="4" fill="#FFF8EA" stroke="#0F1F3D" stroke-width="2.5"/>
+    <text x="256" y="294" text-anchor="middle"
+          font-family="JetBrains Mono, ui-monospace, monospace"
+          font-weight="700" font-size="13" fill="#0F1F3D"
+          letter-spacing="1.2">SAFIRI</text>
+
+    <!-- Wheels -->
+    <circle cx="180" cy="388" r="22" fill="#0F1F3D"/>
+    <circle cx="180" cy="388" r="9"  fill="#FFC83D"/>
+    <circle cx="332" cy="388" r="22" fill="#0F1F3D"/>
+    <circle cx="332" cy="388" r="9"  fill="#FFC83D"/>
+  </g>
+</svg>
